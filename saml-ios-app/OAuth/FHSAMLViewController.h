@@ -15,11 +15,6 @@
  */
 @interface FHSAMLViewController : UIViewController <UIWebViewDelegate>
 
-- (instancetype)initWith:(NSURL *)authRequest
-                delegate:(id)delegate
-        finishedSelector:(SEL)finishedSelector;
-
-- (instancetype)initWith:(NSURL *)authRequest
-         completeHandler:(void (^)(FHResponse *resp))handler;
+- initWithURL:(NSURL*)url;
 
 @end

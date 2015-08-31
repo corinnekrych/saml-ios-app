@@ -15,7 +15,6 @@
 		4834A7AE1B9439B900DFB005 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4834A7AD1B9439B900DFB005 /* Images.xcassets */; };
 		4834A7B11B9439B900DFB005 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4834A7AF1B9439B900DFB005 /* LaunchScreen.xib */; };
 		4834A7BD1B9439B900DFB005 /* saml_ios_appTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4834A7BC1B9439B900DFB005 /* saml_ios_appTests.m */; };
-		4834A7C91B94535600DFB005 /* FHSamlRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4834A7C81B94535600DFB005 /* FHSamlRequest.m */; };
 		4834A7CF1B9455CC00DFB005 /* FHSAMLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4834A7CE1B9455CC00DFB005 /* FHSAMLViewController.m */; };
 		4834A7D21B94700600DFB005 /* fhconfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4834A7D11B94700600DFB005 /* fhconfig.plist */; };
 /* End PBXBuildFile section */
@@ -44,8 +43,6 @@
 		4834A7B61B9439B900DFB005 /* saml-ios-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "saml-ios-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4834A7BB1B9439B900DFB005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4834A7BC1B9439B900DFB005 /* saml_ios_appTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = saml_ios_appTests.m; sourceTree = "<group>"; };
-		4834A7C71B94533A00DFB005 /* FHSamlRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FHSamlRequest.h; sourceTree = "<group>"; };
-		4834A7C81B94535600DFB005 /* FHSamlRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHSamlRequest.m; sourceTree = "<group>"; };
 		4834A7CD1B9455CC00DFB005 /* FHSAMLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FHSAMLViewController.h; path = OAuth/FHSAMLViewController.h; sourceTree = "<group>"; };
 		4834A7CE1B9455CC00DFB005 /* FHSAMLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FHSAMLViewController.m; path = OAuth/FHSAMLViewController.m; sourceTree = "<group>"; };
 		4834A7D11B94700600DFB005 /* fhconfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = fhconfig.plist; sourceTree = "<group>"; };
@@ -98,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				4834A7CC1B9455B700DFB005 /* OAuth */,
-				4834A7C61B9439D700DFB005 /* SAML */,
 				4834A7A41B9439B900DFB005 /* AppDelegate.h */,
 				4834A7A51B9439B900DFB005 /* AppDelegate.m */,
 				4834A7A71B9439B900DFB005 /* ViewController.h */,
@@ -135,15 +131,6 @@
 				4834A7BB1B9439B900DFB005 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		4834A7C61B9439D700DFB005 /* SAML */ = {
-			isa = PBXGroup;
-			children = (
-				4834A7C71B94533A00DFB005 /* FHSamlRequest.h */,
-				4834A7C81B94535600DFB005 /* FHSamlRequest.m */,
-			);
-			name = SAML;
 			sourceTree = "<group>";
 		};
 		4834A7CC1B9455B700DFB005 /* OAuth */ = {
@@ -311,7 +298,6 @@
 				4834A7CF1B9455CC00DFB005 /* FHSAMLViewController.m in Sources */,
 				4834A7A91B9439B900DFB005 /* ViewController.m in Sources */,
 				4834A7A61B9439B900DFB005 /* AppDelegate.m in Sources */,
-				4834A7C91B94535600DFB005 /* FHSamlRequest.m in Sources */,
 				4834A7A31B9439B900DFB005 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "FHSamlRequest.h"
 #import "FH.h"
+#import "FHSAMLViewController.h"
 
 @interface ViewController ()
 
@@ -19,6 +19,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(close) name:@"WebViewClosed" object:nil];
+
+}
+
+- (void) close {
+    // Get the User name claims
+    NSString* deviceID = [[FHConfig getSharedInstance] uuid];
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"token"] = deviceID;
+    FHCloudRequest *cloudReq = [FH buildCloudRequest:@"sso/session/valid" WithMethod:@"POST" AndHeaders:nil AndArgs: params];
+    
+    // Initiate the SSO call to the cloud
+    [cloudReq execWithSuccess:^(FHResponse *success) {
+        NSDictionary* response = [success parsedResponse];
+        NSString* name = response[@"first_name"];
+        NSLog(@"Request name = %@", name);
+
+    } AndFailure:^(FHResponse *failed) {
+        NSLog(@"Request name failure =%@", failed);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,18 +52,27 @@
         NSLog(@"initialized OK");
         NSLog(@"Login to SAML Service...");
         
-        FHSamlRequest* req = [[FHSamlRequest alloc] initWithViewController:self];
-        [req execAsyncWithSuccess:^(FHResponse *success) {
-            NSLog(@"Login SUCCESS to SAML Service...");
-            
+        // Build a FHCloudRequest to get the SSO login URL
+        NSString* deviceID = [[FHConfig getSharedInstance] uuid];
+        NSMutableDictionary *params = [NSMutableDictionary dictionary];
+        params[@"token"] = deviceID;
+        FHCloudRequest *cloudReq = [FH buildCloudRequest:@"sso/session/login_host" WithMethod:@"POST" AndHeaders:nil AndArgs: params];
+        
+        // Initiate the SSO call to the cloud
+        [cloudReq execWithSuccess:^(FHResponse *success) {
+            NSLog(@"EXEC SUCCESS =%@", success);
+            NSDictionary* response = [success parsedResponse];
+            NSString* urlString = response[@"sso"];
+            NSURL* loginUrl = [[NSURL alloc] initWithString:urlString];
+            // Display WebView
+            FHSAMLViewController *controller = [[FHSAMLViewController alloc] initWithURL:loginUrl];
+            [[[[UIApplication sharedApplication] keyWindow] rootViewController] presentViewController:controller animated:YES completion:nil];
         } AndFailure:^(FHResponse *failed) {
-            NSLog(@"Login FAILURE to SAML Service...");
+            NSLog(@"EXEC FAILUE =%@", failed);
         }];
     } AndFailure:^(FHResponse *response) {
         NSLog(@"initialize fail, %@", response.rawResponseAsString);
     }];
-    
-    
 
 }
 
