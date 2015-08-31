@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		297BAC629520CC4ED5A9C477 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA43EF4D11A0DA03484C24A5 /* libPods.a */; };
 		4834A7A31B9439B900DFB005 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4834A7A21B9439B900DFB005 /* main.m */; };
 		4834A7A61B9439B900DFB005 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4834A7A51B9439B900DFB005 /* AppDelegate.m */; };
 		4834A7A91B9439B900DFB005 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4834A7A81B9439B900DFB005 /* ViewController.m */; };
@@ -14,6 +15,9 @@
 		4834A7AE1B9439B900DFB005 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4834A7AD1B9439B900DFB005 /* Images.xcassets */; };
 		4834A7B11B9439B900DFB005 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4834A7AF1B9439B900DFB005 /* LaunchScreen.xib */; };
 		4834A7BD1B9439B900DFB005 /* saml_ios_appTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4834A7BC1B9439B900DFB005 /* saml_ios_appTests.m */; };
+		4834A7C91B94535600DFB005 /* FHSamlRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4834A7C81B94535600DFB005 /* FHSamlRequest.m */; };
+		4834A7CF1B9455CC00DFB005 /* FHSAMLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4834A7CE1B9455CC00DFB005 /* FHSAMLViewController.m */; };
+		4834A7D21B94700600DFB005 /* fhconfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4834A7D11B94700600DFB005 /* fhconfig.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,14 @@
 		4834A7B61B9439B900DFB005 /* saml-ios-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "saml-ios-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4834A7BB1B9439B900DFB005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4834A7BC1B9439B900DFB005 /* saml_ios_appTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = saml_ios_appTests.m; sourceTree = "<group>"; };
+		4834A7C71B94533A00DFB005 /* FHSamlRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FHSamlRequest.h; sourceTree = "<group>"; };
+		4834A7C81B94535600DFB005 /* FHSamlRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHSamlRequest.m; sourceTree = "<group>"; };
+		4834A7CD1B9455CC00DFB005 /* FHSAMLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FHSAMLViewController.h; path = OAuth/FHSAMLViewController.h; sourceTree = "<group>"; };
+		4834A7CE1B9455CC00DFB005 /* FHSAMLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FHSAMLViewController.m; path = OAuth/FHSAMLViewController.m; sourceTree = "<group>"; };
+		4834A7D11B94700600DFB005 /* fhconfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = fhconfig.plist; sourceTree = "<group>"; };
+		6BC526FDADC4DFDACD43857F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		AA43EF4D11A0DA03484C24A5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E69E375CB3F946A28B28AD42 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				297BAC629520CC4ED5A9C477 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,9 +76,12 @@
 		4834A7941B9439B900DFB005 = {
 			isa = PBXGroup;
 			children = (
+				4834A7D11B94700600DFB005 /* fhconfig.plist */,
 				4834A79F1B9439B900DFB005 /* saml-ios-app */,
 				4834A7B91B9439B900DFB005 /* saml-ios-appTests */,
 				4834A79E1B9439B900DFB005 /* Products */,
+				D5CDCB57DAA198A294B176CF /* Pods */,
+				6010CA4C9C6F734A0F91A38A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +97,7 @@
 		4834A79F1B9439B900DFB005 /* saml-ios-app */ = {
 			isa = PBXGroup;
 			children = (
+				4834A7CC1B9455B700DFB005 /* OAuth */,
 				4834A7C61B9439D700DFB005 /* SAML */,
 				4834A7A41B9439B900DFB005 /* AppDelegate.h */,
 				4834A7A51B9439B900DFB005 /* AppDelegate.m */,
@@ -123,8 +140,36 @@
 		4834A7C61B9439D700DFB005 /* SAML */ = {
 			isa = PBXGroup;
 			children = (
+				4834A7C71B94533A00DFB005 /* FHSamlRequest.h */,
+				4834A7C81B94535600DFB005 /* FHSamlRequest.m */,
 			);
 			name = SAML;
+			sourceTree = "<group>";
+		};
+		4834A7CC1B9455B700DFB005 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				4834A7CD1B9455CC00DFB005 /* FHSAMLViewController.h */,
+				4834A7CE1B9455CC00DFB005 /* FHSAMLViewController.m */,
+			);
+			name = OAuth;
+			sourceTree = "<group>";
+		};
+		6010CA4C9C6F734A0F91A38A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA43EF4D11A0DA03484C24A5 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5CDCB57DAA198A294B176CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E69E375CB3F946A28B28AD42 /* Pods.debug.xcconfig */,
+				6BC526FDADC4DFDACD43857F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4834A7C01B9439B900DFB005 /* Build configuration list for PBXNativeTarget "saml-ios-app" */;
 			buildPhases = (
+				81F1ACC706D40E3581990F5D /* Check Pods Manifest.lock */,
 				4834A7991B9439B900DFB005 /* Sources */,
 				4834A79A1B9439B900DFB005 /* Frameworks */,
 				4834A79B1B9439B900DFB005 /* Resources */,
+				7E456D84D8F79F4A1530AB4A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4834A7D21B94700600DFB005 /* fhconfig.plist in Resources */,
 				4834A7AC1B9439B900DFB005 /* Main.storyboard in Resources */,
 				4834A7B11B9439B900DFB005 /* LaunchScreen.xib in Resources */,
 				4834A7AE1B9439B900DFB005 /* Images.xcassets in Resources */,
@@ -222,13 +270,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7E456D84D8F79F4A1530AB4A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81F1ACC706D40E3581990F5D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4834A7991B9439B900DFB005 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4834A7CF1B9455CC00DFB005 /* FHSAMLViewController.m in Sources */,
 				4834A7A91B9439B900DFB005 /* ViewController.m in Sources */,
 				4834A7A61B9439B900DFB005 /* AppDelegate.m in Sources */,
+				4834A7C91B94535600DFB005 /* FHSamlRequest.m in Sources */,
 				4834A7A31B9439B900DFB005 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,6 +438,7 @@
 		};
 		4834A7C11B9439B900DFB005 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E69E375CB3F946A28B28AD42 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "saml-ios-app/Info.plist";
@@ -365,6 +449,7 @@
 		};
 		4834A7C21B9439B900DFB005 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BC526FDADC4DFDACD43857F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "saml-ios-app/Info.plist";
@@ -426,6 +511,7 @@
 				4834A7C21B9439B900DFB005 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4834A7C31B9439B900DFB005 /* Build configuration list for PBXNativeTarget "saml-ios-appTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +520,7 @@
 				4834A7C51B9439B900DFB005 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
