@@ -17,6 +17,7 @@
 		4834A7BD1B9439B900DFB005 /* saml_ios_appTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4834A7BC1B9439B900DFB005 /* saml_ios_appTests.m */; };
 		4834A7CF1B9455CC00DFB005 /* FHSAMLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4834A7CE1B9455CC00DFB005 /* FHSAMLViewController.m */; };
 		4834A7D21B94700600DFB005 /* fhconfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4834A7D11B94700600DFB005 /* fhconfig.plist */; };
+		48A3E6BE1B97057F00BDA6C9 /* LoggedInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A3E6BD1B97057F00BDA6C9 /* LoggedInViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		4834A7CD1B9455CC00DFB005 /* FHSAMLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FHSAMLViewController.h; path = OAuth/FHSAMLViewController.h; sourceTree = "<group>"; };
 		4834A7CE1B9455CC00DFB005 /* FHSAMLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FHSAMLViewController.m; path = OAuth/FHSAMLViewController.m; sourceTree = "<group>"; };
 		4834A7D11B94700600DFB005 /* fhconfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = fhconfig.plist; sourceTree = "<group>"; };
+		48A3E6BC1B97057F00BDA6C9 /* LoggedInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggedInViewController.h; sourceTree = "<group>"; };
+		48A3E6BD1B97057F00BDA6C9 /* LoggedInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggedInViewController.m; sourceTree = "<group>"; };
 		6BC526FDADC4DFDACD43857F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AA43EF4D11A0DA03484C24A5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E69E375CB3F946A28B28AD42 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +102,8 @@
 				4834A7A51B9439B900DFB005 /* AppDelegate.m */,
 				4834A7A71B9439B900DFB005 /* ViewController.h */,
 				4834A7A81B9439B900DFB005 /* ViewController.m */,
+				48A3E6BC1B97057F00BDA6C9 /* LoggedInViewController.h */,
+				48A3E6BD1B97057F00BDA6C9 /* LoggedInViewController.m */,
 				4834A7AA1B9439B900DFB005 /* Main.storyboard */,
 				4834A7AD1B9439B900DFB005 /* Images.xcassets */,
 				4834A7AF1B9439B900DFB005 /* LaunchScreen.xib */,
@@ -297,6 +302,7 @@
 			files = (
 				4834A7CF1B9455CC00DFB005 /* FHSAMLViewController.m in Sources */,
 				4834A7A91B9439B900DFB005 /* ViewController.m in Sources */,
+				48A3E6BE1B97057F00BDA6C9 /* LoggedInViewController.m in Sources */,
 				4834A7A61B9439B900DFB005 /* AppDelegate.m in Sources */,
 				4834A7A31B9439B900DFB005 /* main.m in Sources */,
 			);
