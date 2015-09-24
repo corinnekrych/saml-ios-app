@@ -2,16 +2,26 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
     <dict>
+<!--        <key>host</key>-->
+<!--        <string>replace me</string>-->
+<!--        <key>appid</key>-->
+<!--        <string>replace me</string>-->
+<!--        <key>projectid</key>-->
+<!--        <string>replace me</string>-->
+<!--        <key>appkey</key>-->
+<!--        <string>replace me</string>-->
+<!--        <key>connectiontag</key>-->
+<!--        <string>replace me</string>-->
         <key>host</key>
-        <string>replace me</string>
+        <string>https://redhat-demos-t.sandbox.feedhenry.com</string>
         <key>appid</key>
-        <string>replace me</string>
+        <string>lnju55untsgcdkfykt3tg6fh</string>
         <key>projectid</key>
-        <string>replace me</string>
+        <string>lnju55sjfqzzboiugqba3ffo</string>
         <key>appkey</key>
-        <string>replace me</string>
+        <string>d831a6f5400806b052b6854e41c3b117daad460d</string>
         <key>connectiontag</key>
-        <string>replace me</string>
+        <string>0.0.1</string>
 
     </dict>
 </plist>
