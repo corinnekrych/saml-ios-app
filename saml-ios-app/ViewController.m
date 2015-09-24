@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "FH.h"
+#import <FH/FH.h>
 #import "FHSAMLViewController.h"
 #import "LoggedInViewController.h"
 

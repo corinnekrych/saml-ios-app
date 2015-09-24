@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		297BAC629520CC4ED5A9C477 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA43EF4D11A0DA03484C24A5 /* libPods.a */; };
 		4834A7A31B9439B900DFB005 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4834A7A21B9439B900DFB005 /* main.m */; };
 		4834A7A61B9439B900DFB005 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4834A7A51B9439B900DFB005 /* AppDelegate.m */; };
 		4834A7A91B9439B900DFB005 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4834A7A81B9439B900DFB005 /* ViewController.m */; };
@@ -18,6 +17,15 @@
 		4834A7CF1B9455CC00DFB005 /* FHSAMLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4834A7CE1B9455CC00DFB005 /* FHSAMLViewController.m */; };
 		4834A7D21B94700600DFB005 /* fhconfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4834A7D11B94700600DFB005 /* fhconfig.plist */; };
 		48A3E6BE1B97057F00BDA6C9 /* LoggedInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A3E6BD1B97057F00BDA6C9 /* LoggedInViewController.m */; };
+		48B97EAB1BB3DC4900AF26FC /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B97EAA1BB3DC4900AF26FC /* libxml2.dylib */; };
+		48B97EAD1BB3DC5900AF26FC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B97EAC1BB3DC5900AF26FC /* libz.dylib */; };
+		48B97EAF1BB3E21300AF26FC /* FH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F479E61BB3D34A00C5E23F /* FH.framework */; };
+		48F479E91BB3D52E00C5E23F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F479E81BB3D52E00C5E23F /* CFNetwork.framework */; };
+		48F479EB1BB3D53900C5E23F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F479EA1BB3D53900C5E23F /* SystemConfiguration.framework */; };
+		48F479ED1BB3D56000C5E23F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F479EC1BB3D56000C5E23F /* MobileCoreServices.framework */; };
+		48F479EF1BB3D56900C5E23F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F479EE1BB3D56900C5E23F /* UIKit.framework */; };
+		48F479F11BB3D57000C5E23F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F479F01BB3D57000C5E23F /* Foundation.framework */; };
+		48F479F31BB3D59900C5E23F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F479F21BB3D59900C5E23F /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,9 +57,15 @@
 		4834A7D11B94700600DFB005 /* fhconfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = fhconfig.plist; sourceTree = "<group>"; };
 		48A3E6BC1B97057F00BDA6C9 /* LoggedInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggedInViewController.h; sourceTree = "<group>"; };
 		48A3E6BD1B97057F00BDA6C9 /* LoggedInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggedInViewController.m; sourceTree = "<group>"; };
-		6BC526FDADC4DFDACD43857F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		AA43EF4D11A0DA03484C24A5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E69E375CB3F946A28B28AD42 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		48B97EAA1BB3DC4900AF26FC /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		48B97EAC1BB3DC5900AF26FC /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		48F479E61BB3D34A00C5E23F /* FH.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FH.framework; sourceTree = "<group>"; };
+		48F479E81BB3D52E00C5E23F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		48F479EA1BB3D53900C5E23F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		48F479EC1BB3D56000C5E23F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		48F479EE1BB3D56900C5E23F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		48F479F01BB3D57000C5E23F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		48F479F21BB3D59900C5E23F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +73,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				297BAC629520CC4ED5A9C477 /* libPods.a in Frameworks */,
+				48B97EAF1BB3E21300AF26FC /* FH.framework in Frameworks */,
+				48B97EAD1BB3DC5900AF26FC /* libz.dylib in Frameworks */,
+				48B97EAB1BB3DC4900AF26FC /* libxml2.dylib in Frameworks */,
+				48F479F31BB3D59900C5E23F /* CoreGraphics.framework in Frameworks */,
+				48F479F11BB3D57000C5E23F /* Foundation.framework in Frameworks */,
+				48F479EF1BB3D56900C5E23F /* UIKit.framework in Frameworks */,
+				48F479ED1BB3D56000C5E23F /* MobileCoreServices.framework in Frameworks */,
+				48F479EB1BB3D53900C5E23F /* SystemConfiguration.framework in Frameworks */,
+				48F479E91BB3D52E00C5E23F /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +102,6 @@
 				4834A79F1B9439B900DFB005 /* saml-ios-app */,
 				4834A7B91B9439B900DFB005 /* saml-ios-appTests */,
 				4834A79E1B9439B900DFB005 /* Products */,
-				D5CDCB57DAA198A294B176CF /* Pods */,
 				6010CA4C9C6F734A0F91A38A /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -150,18 +171,17 @@
 		6010CA4C9C6F734A0F91A38A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AA43EF4D11A0DA03484C24A5 /* libPods.a */,
+				48B97EAA1BB3DC4900AF26FC /* libxml2.dylib */,
+				48B97EAC1BB3DC5900AF26FC /* libz.dylib */,
+				48F479EA1BB3D53900C5E23F /* SystemConfiguration.framework */,
+				48F479E81BB3D52E00C5E23F /* CFNetwork.framework */,
+				48F479EC1BB3D56000C5E23F /* MobileCoreServices.framework */,
+				48F479E61BB3D34A00C5E23F /* FH.framework */,
+				48F479EE1BB3D56900C5E23F /* UIKit.framework */,
+				48F479F01BB3D57000C5E23F /* Foundation.framework */,
+				48F479F21BB3D59900C5E23F /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D5CDCB57DAA198A294B176CF /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E69E375CB3F946A28B28AD42 /* Pods.debug.xcconfig */,
-				6BC526FDADC4DFDACD43857F /* Pods.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,11 +191,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4834A7C01B9439B900DFB005 /* Build configuration list for PBXNativeTarget "saml-ios-app" */;
 			buildPhases = (
-				81F1ACC706D40E3581990F5D /* Check Pods Manifest.lock */,
 				4834A7991B9439B900DFB005 /* Sources */,
 				4834A79A1B9439B900DFB005 /* Frameworks */,
 				4834A79B1B9439B900DFB005 /* Resources */,
-				7E456D84D8F79F4A1530AB4A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -261,39 +279,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		7E456D84D8F79F4A1530AB4A /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		81F1ACC706D40E3581990F5D /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4834A7991B9439B900DFB005 /* Sources */ = {
@@ -430,22 +415,30 @@
 		};
 		4834A7C11B9439B900DFB005 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E69E375CB3F946A28B28AD42 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "saml-ios-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		4834A7C21B9439B900DFB005 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BC526FDADC4DFDACD43857F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "saml-ios-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
