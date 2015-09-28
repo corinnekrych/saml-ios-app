@@ -89,6 +89,14 @@
         }];
     } AndFailure:^(FHResponse *response) {
         NSLog(@"initialize fail, %@", response.rawResponseAsString);
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"FH init fails"
+                                                        message:@"Make sure you've configured fhconfig."
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+        [activityIndicator stopAnimating];
+        activityIndicator.hidden = true;
     }];
 
 }
