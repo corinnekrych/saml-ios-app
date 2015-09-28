@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <FH/FH.h>
 @interface ViewController : UIViewController
-
-
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 @end
 
