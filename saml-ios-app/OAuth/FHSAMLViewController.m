@@ -67,7 +67,6 @@
 }
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
-    NSLog(@"wiew shouldStartLoadWithRequest %@", request.URL.absoluteString);
     if([request.URL.absoluteString hasSuffix:@"login/ok"]) {
         [self.presentingViewController dismissViewControllerAnimated:YES
                                                           completion:nil];

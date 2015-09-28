@@ -17,17 +17,17 @@
 
 @implementation ViewController
 
+@synthesize activityIndicator;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    activityIndicator.hidden = true;
     // Do any additional setup after loading the view, typically from a nib.
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(close) name:@"WebViewClosed" object:nil];
 
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-    NSLog(@"Prepare Loggedin view");
     if([segue.identifier isEqualToString:@"showLoggedIn"]) {
         NSDictionary *response = (NSDictionary *) sender;
         LoggedInViewController *controller = (LoggedInViewController *)segue.destinationViewController;
@@ -64,11 +64,12 @@
 }
 
 - (IBAction)login:(UIButton *)sender {
+    activityIndicator.hidden = false;
+    [activityIndicator startAnimating];
     
     [FH initWithSuccess:^(FHResponse *response) {
         NSLog(@"initialized OK");
         NSLog(@"Login to SAML Service...");
-        
         // Build a FHCloudRequest to get the SSO login URL
         NSString* deviceID = [[FHConfig getSharedInstance] uuid];
         NSMutableDictionary *params = [NSMutableDictionary dictionary];
@@ -78,6 +79,7 @@
         // Initiate the SSO call to the cloud
         [cloudReq execWithSuccess:^(FHResponse *success) {
             NSLog(@"EXEC SUCCESS =%@", success);
+            [activityIndicator stopAnimating];
             NSDictionary* response = [success parsedResponse];
             NSString* urlString = response[@"sso"];
             NSURL* loginUrl = [[NSURL alloc] initWithString:urlString];
