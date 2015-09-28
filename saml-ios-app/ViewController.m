@@ -37,8 +37,6 @@
     }
 }
 
-
-
 - (void) close {
     // Get the User name claims
     NSString* deviceID = [[FHConfig getSharedInstance] uuid];
