@@ -54,6 +54,7 @@
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
     if([request.URL.absoluteString hasSuffix:@"login/ok"]) {
+        NSLog(@"Logged in");
         [self.presentingViewController dismissViewControllerAnimated:YES
                                                           completion:nil];
         NSNotification *notification = [NSNotification notificationWithName:@"WebViewClosed" object:nil];

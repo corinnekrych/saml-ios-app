@@ -28,4 +28,28 @@
     [self reloadInputViews];
 }
 
+- (IBAction)signInAgain:(id)sender {
+        NSLog(@"Login to SAML Service again...");
+        // Build a FHCloudRequest to get the SSO login URL
+        NSString* deviceID = [[FHConfig getSharedInstance] uuid];
+        NSMutableDictionary *params = [NSMutableDictionary dictionary];
+        params[@"token"] = deviceID;
+        FHCloudRequest *cloudReq = [FH buildCloudRequest:@"sso/session/login_host" WithMethod:@"POST" AndHeaders:nil AndArgs: params];
+        
+        // Initiate the SSO call to the cloud
+        [cloudReq execWithSuccess:^(FHResponse *success) {
+            NSLog(@"EXEC SUCCESS LOGIN AGAIN=%@", success);
+
+            NSDictionary* response = [success parsedResponse];
+            NSString* urlString = response[@"sso"];
+            NSURL* loginUrl = [[NSURL alloc] initWithString:urlString];
+            // Display WebView
+            FHSAMLViewController *controller = [[FHSAMLViewController alloc] initWithURL:loginUrl];
+            [[[[UIApplication sharedApplication] keyWindow] rootViewController] presentViewController:controller animated:YES completion:nil];
+        } AndFailure:^(FHResponse *failed) {
+            NSLog(@"EXEC FAILUE LOGIN AGAIN=%@", failed);
+        }];
+
+
+}
 @end
