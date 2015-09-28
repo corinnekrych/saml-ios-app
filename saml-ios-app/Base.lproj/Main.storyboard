@@ -49,15 +49,31 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_face_black" translatesAutoresizingMaskIntoConstraints="NO" id="yvp-p5-wEu">
                                 <rect key="frame" x="32" y="93" width="36" height="74"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_lock_outline_black" translatesAutoresizingMaskIntoConstraints="NO" id="aLz-xe-bQK">
-                                <rect key="frame" x="32" y="221" width="36" height="36"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_email_black" translatesAutoresizingMaskIntoConstraints="NO" id="9pv-by-9YC">
                                 <rect key="frame" x="32" y="165" width="36" height="36"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_lock_outline_black" translatesAutoresizingMaskIntoConstraints="NO" id="aLz-xe-bQK">
+                                <rect key="frame" x="32" y="221" width="36" height="36"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKY-8n-ETc">
+                                <rect key="frame" x="20" y="280" width="560" height="40"/>
+                                <color key="backgroundColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="dMy-7n-Qji"/>
+                                </constraints>
+                                <color key="tintColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Sign In Again">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6I4-K3-rWt"/>
+                                    <action selector="signInAgain:" destination="Gnn-Bm-FSq" eventType="touchUpInside" id="qIr-E7-eg7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="JKY-8n-ETc" firstAttribute="centerY" secondItem="VLb-zS-j9w" secondAttribute="centerY" id="4wx-Xj-dTj"/>
                             <constraint firstItem="ltR-9R-zRb" firstAttribute="top" secondItem="31U-eA-x4b" secondAttribute="bottom" constant="65" id="5u5-wq-xnW"/>
                             <constraint firstItem="zmf-mV-lwM" firstAttribute="leading" secondItem="qbC-Wf-5KO" secondAttribute="leading" id="8bb-nX-T2h"/>
                             <constraint firstItem="zmf-mV-lwM" firstAttribute="trailing" secondItem="qbC-Wf-5KO" secondAttribute="trailing" id="D3Q-a5-tjx"/>
@@ -71,6 +87,7 @@
                             <constraint firstItem="KD5-ZH-XxY" firstAttribute="centerY" secondItem="aLz-xe-bQK" secondAttribute="centerY" id="cfn-8z-SW9"/>
                             <constraint firstItem="AhP-ZG-Bn6" firstAttribute="top" secondItem="31U-eA-x4b" secondAttribute="bottom" id="emJ-K4-v5P"/>
                             <constraint firstItem="aLz-xe-bQK" firstAttribute="centerX" secondItem="yvp-p5-wEu" secondAttribute="centerX" id="fLY-td-Yf3"/>
+                            <constraint firstItem="JKY-8n-ETc" firstAttribute="leading" secondItem="VLb-zS-j9w" secondAttribute="leadingMargin" id="gwT-6I-1y8"/>
                             <constraint firstItem="AhP-ZG-Bn6" firstAttribute="leading" secondItem="VLb-zS-j9w" secondAttribute="leadingMargin" constant="-20" id="leO-xY-0Q8"/>
                             <constraint firstItem="zmf-mV-lwM" firstAttribute="top" secondItem="ltR-9R-zRb" secondAttribute="bottom" constant="29" id="niP-S1-5dc"/>
                             <constraint firstItem="KD5-ZH-XxY" firstAttribute="top" secondItem="qbC-Wf-5KO" secondAttribute="bottom" constant="23" id="nv4-8t-p3k"/>
@@ -78,6 +95,7 @@
                             <constraint firstItem="aLz-xe-bQK" firstAttribute="leading" secondItem="ltR-9R-zRb" secondAttribute="leading" id="rcM-da-g2x"/>
                             <constraint firstItem="ltR-9R-zRb" firstAttribute="leading" secondItem="VLb-zS-j9w" secondAttribute="leadingMargin" constant="12" id="sIF-X4-erk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zmf-mV-lwM" secondAttribute="trailing" constant="12" id="scv-pX-cR8"/>
+                            <constraint firstItem="JKY-8n-ETc" firstAttribute="centerX" secondItem="AhP-ZG-Bn6" secondAttribute="centerX" id="sdk-iO-a7Q"/>
                             <constraint firstItem="aLz-xe-bQK" firstAttribute="leading" secondItem="9pv-by-9YC" secondAttribute="leading" id="vnV-pP-cFX"/>
                             <constraint firstItem="zmf-mV-lwM" firstAttribute="leading" secondItem="KD5-ZH-XxY" secondAttribute="leading" id="wMo-Ae-v6D"/>
                         </constraints>
@@ -116,13 +134,6 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="ag2-93-Fb5">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                <color key="barTintColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <items>
-                                    <navigationItem title="saml-ios-app" id="3hY-f4-zu3"/>
-                                </items>
-                            </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMW-re-VA2">
                                 <rect key="frame" x="20" y="280" width="560" height="40"/>
                                 <color key="backgroundColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -141,14 +152,21 @@
                                 <rect key="frame" x="282" y="132" width="37" height="37"/>
                                 <color key="color" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
+                            <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="ag2-93-Fb5">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <color key="barTintColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="saml-ios-app" id="3hY-f4-zu3"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ag2-93-Fb5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="0NF-L2-1jN"/>
                             <constraint firstItem="h4o-4L-5II" firstAttribute="top" secondItem="PYH-d3-OqN" secondAttribute="bottom" constant="8" symbolic="YES" id="7mx-wJ-chF"/>
                             <constraint firstAttribute="trailing" secondItem="ZMW-re-VA2" secondAttribute="trailing" constant="20" id="9Op-qY-Rj8"/>
                             <constraint firstItem="PYH-d3-OqN" firstAttribute="top" secondItem="9wP-wR-fRl" secondAttribute="bottom" constant="41" id="Anc-o9-etj"/>
                             <constraint firstItem="9wP-wR-fRl" firstAttribute="centerX" secondItem="ag2-93-Fb5" secondAttribute="centerX" id="F7b-uk-H6W"/>
-                            <constraint firstItem="ag2-93-Fb5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="JYq-8V-U1R"/>
                             <constraint firstAttribute="centerX" secondItem="h4o-4L-5II" secondAttribute="centerX" constant="-13" id="UKh-JS-f7z"/>
                             <constraint firstItem="h4o-4L-5II" firstAttribute="centerX" secondItem="ag2-93-Fb5" secondAttribute="centerX" constant="13" id="aUj-5y-pUb"/>
                             <constraint firstItem="ZMW-re-VA2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="cPy-uj-CnD"/>
