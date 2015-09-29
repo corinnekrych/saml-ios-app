@@ -46,29 +46,15 @@
     
     UINavigationItem *titleBarItem =
     [[UINavigationItem alloc] initWithTitle:@"Login"];
-    // create the close button
-    UIBarButtonItem *done =
-    [[UIBarButtonItem alloc] initWithTitle:@"Close"
-                                     style:UIBarButtonItemStyleDone
-                                    target:self
-                                    action:@selector(closeView)];
-    [titleBarItem setLeftBarButtonItem:done];
     
     [titleBar pushNavigationItem:titleBarItem animated:NO];
     
     self.view = topView;
 }
 
-- (void)closeView {
-    [self.presentingViewController dismissViewControllerAnimated:YES
-                                                      completion:nil];
-    NSNotification *notification = [NSNotification notificationWithName:@"WebViewClosed" object:nil];
-    [[NSNotificationCenter defaultCenter] postNotification:notification];
-}
-
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
-    NSLog(@"wiew shouldStartLoadWithRequest %@", request.URL.absoluteString);
     if([request.URL.absoluteString hasSuffix:@"login/ok"]) {
+        NSLog(@"Logged in");
         [self.presentingViewController dismissViewControllerAnimated:YES
                                                           completion:nil];
         NSNotification *notification = [NSNotification notificationWithName:@"WebViewClosed" object:nil];
