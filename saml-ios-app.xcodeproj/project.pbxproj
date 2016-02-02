@@ -19,6 +19,7 @@
 		48A3E6BE1B97057F00BDA6C9 /* LoggedInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A3E6BD1B97057F00BDA6C9 /* LoggedInViewController.m */; };
 		48B97EAB1BB3DC4900AF26FC /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B97EAA1BB3DC4900AF26FC /* libxml2.dylib */; };
 		48B97EAD1BB3DC5900AF26FC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B97EAC1BB3DC5900AF26FC /* libz.dylib */; };
+		89B800C1BE0B52F9ECE5EE65 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F0F366AE7F9F0A75DF59B69 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		48A3E6BD1B97057F00BDA6C9 /* LoggedInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggedInViewController.m; sourceTree = "<group>"; };
 		48B97EAA1BB3DC4900AF26FC /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		48B97EAC1BB3DC5900AF26FC /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		4F0F366AE7F9F0A75DF59B69 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE437D4FC1404736A4C3313 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +65,7 @@
 			files = (
 				48B97EAD1BB3DC5900AF26FC /* libz.dylib in Frameworks */,
 				48B97EAB1BB3DC4900AF26FC /* libxml2.dylib in Frameworks */,
+				89B800C1BE0B52F9ECE5EE65 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +158,7 @@
 			children = (
 				48B97EAA1BB3DC4900AF26FC /* libxml2.dylib */,
 				48B97EAC1BB3DC5900AF26FC /* libz.dylib */,
+				4F0F366AE7F9F0A75DF59B69 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
