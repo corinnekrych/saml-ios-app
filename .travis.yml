@@ -1,6 +1,6 @@
 language: objective-c
 osx_image: xcode7
-xcode_project: saml-ios-app.xcworkspace
+xcode_project: saml-ios-app.xcodeproj
 xcode_scheme: saml-ios-app
 xcode_sdk: iphonesimulator
 
