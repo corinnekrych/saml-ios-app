@@ -19,13 +19,6 @@
 		48A3E6BE1B97057F00BDA6C9 /* LoggedInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A3E6BD1B97057F00BDA6C9 /* LoggedInViewController.m */; };
 		48B97EAB1BB3DC4900AF26FC /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B97EAA1BB3DC4900AF26FC /* libxml2.dylib */; };
 		48B97EAD1BB3DC5900AF26FC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B97EAC1BB3DC5900AF26FC /* libz.dylib */; };
-		48B97EAF1BB3E21300AF26FC /* FH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F479E61BB3D34A00C5E23F /* FH.framework */; };
-		48F479E91BB3D52E00C5E23F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F479E81BB3D52E00C5E23F /* CFNetwork.framework */; };
-		48F479EB1BB3D53900C5E23F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F479EA1BB3D53900C5E23F /* SystemConfiguration.framework */; };
-		48F479ED1BB3D56000C5E23F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F479EC1BB3D56000C5E23F /* MobileCoreServices.framework */; };
-		48F479EF1BB3D56900C5E23F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F479EE1BB3D56900C5E23F /* UIKit.framework */; };
-		48F479F11BB3D57000C5E23F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F479F01BB3D57000C5E23F /* Foundation.framework */; };
-		48F479F31BB3D59900C5E23F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F479F21BB3D59900C5E23F /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BCA4F51E406BDB7F194F43A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		4834A79D1B9439B900DFB005 /* saml-ios-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "saml-ios-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4834A7A11B9439B900DFB005 /* saml-ios-app-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "saml-ios-app-Info.plist"; sourceTree = "<group>"; };
 		4834A7A21B9439B900DFB005 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -59,13 +53,7 @@
 		48A3E6BD1B97057F00BDA6C9 /* LoggedInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggedInViewController.m; sourceTree = "<group>"; };
 		48B97EAA1BB3DC4900AF26FC /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		48B97EAC1BB3DC5900AF26FC /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		48F479E61BB3D34A00C5E23F /* FH.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FH.framework; sourceTree = "<group>"; };
-		48F479E81BB3D52E00C5E23F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		48F479EA1BB3D53900C5E23F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		48F479EC1BB3D56000C5E23F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		48F479EE1BB3D56900C5E23F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		48F479F01BB3D57000C5E23F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		48F479F21BB3D59900C5E23F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5CE437D4FC1404736A4C3313 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,15 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48B97EAF1BB3E21300AF26FC /* FH.framework in Frameworks */,
 				48B97EAD1BB3DC5900AF26FC /* libz.dylib in Frameworks */,
 				48B97EAB1BB3DC4900AF26FC /* libxml2.dylib in Frameworks */,
-				48F479F31BB3D59900C5E23F /* CoreGraphics.framework in Frameworks */,
-				48F479F11BB3D57000C5E23F /* Foundation.framework in Frameworks */,
-				48F479EF1BB3D56900C5E23F /* UIKit.framework in Frameworks */,
-				48F479ED1BB3D56000C5E23F /* MobileCoreServices.framework in Frameworks */,
-				48F479EB1BB3D53900C5E23F /* SystemConfiguration.framework in Frameworks */,
-				48F479E91BB3D52E00C5E23F /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +84,7 @@
 				4834A7B91B9439B900DFB005 /* saml-ios-appTests */,
 				4834A79E1B9439B900DFB005 /* Products */,
 				6010CA4C9C6F734A0F91A38A /* Frameworks */,
+				F4A2E17AB993B5A9559A8238 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -173,15 +155,17 @@
 			children = (
 				48B97EAA1BB3DC4900AF26FC /* libxml2.dylib */,
 				48B97EAC1BB3DC5900AF26FC /* libz.dylib */,
-				48F479EA1BB3D53900C5E23F /* SystemConfiguration.framework */,
-				48F479E81BB3D52E00C5E23F /* CFNetwork.framework */,
-				48F479EC1BB3D56000C5E23F /* MobileCoreServices.framework */,
-				48F479E61BB3D34A00C5E23F /* FH.framework */,
-				48F479EE1BB3D56900C5E23F /* UIKit.framework */,
-				48F479F01BB3D57000C5E23F /* Foundation.framework */,
-				48F479F21BB3D59900C5E23F /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4A2E17AB993B5A9559A8238 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BCA4F51E406BDB7F194F43A /* Pods.debug.xcconfig */,
+				5CE437D4FC1404736A4C3313 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4834A7C01B9439B900DFB005 /* Build configuration list for PBXNativeTarget "saml-ios-app" */;
 			buildPhases = (
+				6A3FB5001EA6AE05209DC928 /* Check Pods Manifest.lock */,
 				4834A7991B9439B900DFB005 /* Sources */,
 				4834A79A1B9439B900DFB005 /* Frameworks */,
 				4834A79B1B9439B900DFB005 /* Resources */,
+				D4A35F6A9EA38B7E572E4366 /* Embed Pods Frameworks */,
+				4ECC39C4F626106F590D605A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -279,6 +266,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4ECC39C4F626106F590D605A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A3FB5001EA6AE05209DC928 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D4A35F6A9EA38B7E572E4366 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4834A7991B9439B900DFB005 /* Sources */ = {
@@ -408,6 +443,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -416,15 +452,17 @@
 		};
 		4834A7C11B9439B900DFB005 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BCA4F51E406BDB7F194F43A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "saml-ios-app/saml-ios-app-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
+				LD_MAP_FILE_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
+				"OTHER_LDFLAGS[arch=*]" = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.feedhenry.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -432,15 +470,17 @@
 		};
 		4834A7C21B9439B900DFB005 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CE437D4FC1404736A4C3313 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "saml-ios-app/saml-ios-app-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
+				LD_MAP_FILE_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
+				"OTHER_LDFLAGS[arch=*]" = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.feedhenry.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
