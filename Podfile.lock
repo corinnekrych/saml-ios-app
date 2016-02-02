@@ -1,0 +1,16 @@
+PODS:
+  - AeroGear-Push (1.2.0)
+  - FH (3.1.1):
+    - AeroGear-Push (= 1.2.0)
+    - Reachability (= 3.2)
+  - Reachability (3.2)
+
+DEPENDENCIES:
+  - FH (>= 3.1.1)
+
+SPEC CHECKSUMS:
+  AeroGear-Push: 02104f3ec9fc42dd328497ecfbcc8bb6ade0700f
+  FH: 33353448996384a4c05626b8a42ac7ebee75bdc5
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+
+COCOAPODS: 0.39.0
