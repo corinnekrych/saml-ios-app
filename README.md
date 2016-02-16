@@ -5,7 +5,7 @@
 Author: Corinne Krych   
 Level: Intermediate  
 Technologies: Objective-C, iOS, RHMAP
-Summary: A demonstration of how to synchronize a single collection with RHMAP. 
+Summary: A demonstration of how to authenticate with SAML IdP with RHMAP. 
 Community Project : [Feed Henry](http://feedhenry.org)
 Target Product: RHMAP  
 Product Versions: RHMAP 3.7.0+   
