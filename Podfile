@@ -1,6 +1,8 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-xcodeproj 'saml-ios-app.xcodeproj'
+project 'saml-ios-app.xcodeproj'
 platform :ios, '7.0'
 
-pod 'FH', '>= 3.1.1'
+target 'saml-ios-app' do
+	pod 'FH', '>= 3.1.1'
+end
