@@ -4,9 +4,6 @@ xcode_workspace: saml-ios-app.xcworkspace
 xcode_scheme: saml-ios-app
 xcode_sdk: iphonesimulator
 
-before_install:
-    - pod repo update
-
 notifications:
   irc: "irc.freenode.org#feedhenry"
 
